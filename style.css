@@ -28,7 +28,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 95vh;
+  margin-top: 5vh;
 }
 
 .line__container {
@@ -48,12 +49,31 @@ body {
   font-size: 8rem;
 }
 
+@media (max-width: 62.5em) {
+  .heading--title {
+    font-size: 6rem;
+  }
+}
+
 .line__box {
   height: 3rem;
   width: 50%;
   border: 1px solid black;
   position: relative;
   border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 62.5em) {
+  .line__box {
+    width: 75%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .line__box {
+    width: 90%;
+  }
 }
 
 .line__text {
@@ -76,6 +96,19 @@ body {
   position: relative;
   border-radius: 10px;
   background: green;
+  text-align: center;
+}
+
+@media (max-width: 62.5em) {
+  .line__status-box {
+    width: 75%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .line__status-box {
+    width: 90%;
+  }
 }
 
 .status__good {
@@ -116,6 +149,13 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media (max-width: 62.5em) {
+  .btn {
+    width: 10rem;
+    height: 3rem;
+  }
 }
 
 .btn:hover {
