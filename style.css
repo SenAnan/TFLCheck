@@ -1,227 +1,231 @@
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
-  font-size: 62.5%;
+	font-family: sans-serif;
+	font-size: 62.5%;
 }
 
 body {
-  font-family: inherit;
+	font-family: inherit;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 95vh;
-  margin-top: 5vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	justify-content: space-evenly;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 95vh;
+	margin-top: 5vh;
 }
 
 .line__container {
-  display: -ms-grid;
-  display: grid;
-  width: 75%;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 3rem;
-  grid-row-gap: 1rem;
-  justify-items: center;
-  margin-bottom: 3rem;
+	display: -ms-grid;
+	display: grid;
+	width: 75%;
+	-ms-grid-columns: (1fr) [2];
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 3rem;
+	grid-row-gap: 1rem;
+	justify-items: center;
+	margin-bottom: 3rem;
 }
 
 .heading--title {
-  margin-top: -5rem;
-  font-size: 8rem;
+	margin-top: -5rem;
+	font-size: 8rem;
 }
 
 @media (max-width: 62.5em) {
-  .heading--title {
-    font-size: 6rem;
-  }
+	.heading--title {
+		font-size: 6rem;
+	}
 }
 
 .line__box {
-  height: 3rem;
-  width: 50%;
-  border: 1px solid black;
-  position: relative;
-  border-radius: 10px;
-  text-align: center;
+	height: 3rem;
+	width: 50%;
+	border: 1px solid black;
+	position: relative;
+	border-radius: 10px;
+	text-align: center;
 }
 
 @media (max-width: 62.5em) {
-  .line__box {
-    width: 75%;
-  }
+	.line__box {
+		width: 75%;
+	}
 }
 
 @media (max-width: 62.5em) {
-  .line__box {
-    width: 90%;
-  }
+	.line__box {
+		width: 90%;
+	}
 }
 
 .line__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: white;
 }
 
 .line__text--dark {
-  color: black !important;
+	color: black !important;
 }
 
 .line__status-box {
-  height: 3rem;
-  width: 50%;
-  border: 1px solid black;
-  position: relative;
-  border-radius: 10px;
-  background: green;
-  text-align: center;
+	height: 3rem;
+	width: 50%;
+	border: 1px solid black;
+	position: relative;
+	border-radius: 10px;
+	background: green;
+	text-align: center;
 }
 
 @media (max-width: 62.5em) {
-  .line__status-box {
-    width: 75%;
-  }
+	.line__status-box {
+		width: 75%;
+	}
 }
 
 @media (max-width: 62.5em) {
-  .line__status-box {
-    width: 90%;
-  }
+	.line__status-box {
+		width: 90%;
+	}
 }
 
 .status__good {
-  background: green;
+	background: green;
 }
 
 .status__minor {
-  background: orange;
+	background: orange;
 }
 
-.status__severe, .status__part {
-  background: red;
+.status__severe {
+	background: red;
 }
 
 .status__closed {
-  background: black;
+	background: black;
+}
+
+.status__part {
+	background: grey;
 }
 
 .image {
-  width: 25rem;
-  opacity: 0.4;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+	width: 25rem;
+	opacity: 0.4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .btn {
-  width: 15rem;
-  height: 4rem;
-  border-radius: 20px;
-  background: grey;
-  border: 1px solid black;
-  position: relative;
-  -webkit-box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
-          box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+	width: 15rem;
+	height: 4rem;
+	border-radius: 20px;
+	background: grey;
+	border: 1px solid black;
+	position: relative;
+	-webkit-box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
 @media (max-width: 62.5em) {
-  .btn {
-    width: 10rem;
-    height: 3rem;
-  }
+	.btn {
+		width: 10rem;
+		height: 3rem;
+	}
 }
 
 .btn:hover {
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
-  -webkit-box-shadow: 3px 7px 3px rgba(0, 0, 0, 0.5);
-          box-shadow: 3px 7px 3px rgba(0, 0, 0, 0.5);
+	-webkit-transform: translateY(-0.2rem);
+	transform: translateY(-0.2rem);
+	-webkit-box-shadow: 3px 7px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 3px 7px 3px rgba(0, 0, 0, 0.5);
 }
 
 .btn:active {
-  -webkit-transform: translateY(0.2rem);
-          transform: translateY(0.2rem);
-  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	-webkit-transform: translateY(0.2rem);
+	transform: translateY(0.2rem);
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .btn__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
 }
 
 .bakerloo {
-  background: brown;
+	background: brown;
 }
 
 .central {
-  background: red;
+	background: red;
 }
 
 .circle {
-  background: yellow;
+	background: yellow;
 }
 
 .district {
-  background: green;
+	background: green;
 }
 
 .hammersmith {
-  background: pink;
+	background: pink;
 }
 
 .jubilee {
-  background: silver;
+	background: silver;
 }
 
 .metropolitan {
-  background: purple;
+	background: purple;
 }
 
 .northern {
-  background: black;
+	background: black;
 }
 
 .piccadilly {
-  background: blue;
+	background: blue;
 }
 
 .victoria {
-  background: #41bbeb;
+	background: #41bbeb;
 }
 
 .waterloo {
-  background: #97eaf8;
+	background: #97eaf8;
 }
 /*# sourceMappingURL=style.css.map */

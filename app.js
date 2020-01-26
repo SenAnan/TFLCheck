@@ -23,11 +23,16 @@ function refresh() {
 					statusBoxes[i].classList.add('status__minor');
 				} else if (statuses[i] == 'Severe Delays') {
 					statusBoxes[i].classList.add('status__severe');
-				} else if (statuses[i] == 'Closed' || statuses[i] == 'No Service') {
+				} else if (
+					statuses[i] == 'Closed' ||
+					statuses[i] == 'No Service' ||
+					statuses[i] == 'Service Closed'
+				) {
 					statusBoxes[i].classList.add('status__closed');
 				} else if (statuses[i] == 'Planned Closure' || statuses[i] == 'Part Closure') {
 					statusBoxes[i].classList.add('status__part');
 				}
+				console.log(statuses[i]);
 			}
 		});
 }
