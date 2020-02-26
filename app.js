@@ -16,7 +16,7 @@ function refresh() {
 		})
 		.then(() => {
 			for (let i = 0; i < 11; i++) {
-				statusTexts[i].innerHTML = statuses[i];
+				statusTexts[i].textContent = statuses[i];
 				if (statuses[i] == 'Good Service') {
 					statusBoxes[i].classList.add('status__good');
 				} else if (statuses[i] == 'Minor Delays') {
